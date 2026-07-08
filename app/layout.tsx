@@ -1,34 +1,44 @@
-import type { Metadata } from "next";
-import { Orbitron, Space_Mono, Inter } from "next/font/google";
+import type { Metadata, Viewport } from "next";
+import { Archivo, Newsreader, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 
-const orbitron = Orbitron({
-  variable: "--font-orbitron",
+const archivo = Archivo({
+  variable: "--font-archivo",
   subsets: ["latin"],
-  weight: ["400", "600", "700", "900"],
+  weight: "variable",
+  axes: ["wdth"],
   display: "swap",
   preload: true,
 });
 
-const spaceMono = Space_Mono({
-  variable: "--font-space-mono",
+const newsreader = Newsreader({
+  variable: "--font-newsreader",
   subsets: ["latin"],
-  weight: ["400", "700"],
+  weight: ["400", "500"],
+  style: ["normal", "italic"],
   display: "swap",
   preload: false,
 });
 
-const inter = Inter({
-  variable: "--font-inter",
+const jetbrainsMono = JetBrains_Mono({
+  variable: "--font-jetbrains",
   subsets: ["latin"],
+  weight: ["400", "500"],
   display: "swap",
   preload: false,
 });
 
 export const metadata: Metadata = {
-  title: "Salman | Full-Stack Developer",
-  description: "Portfolio of Salman — Full-Stack Developer & Designer building digital experiences at the intersection of code and design.",
-  keywords: ["developer", "portfolio", "full-stack", "Next.js", "React"],
+  title: "Salman — I build systems that make decisions",
+  description:
+    "Salman — full-stack and agent engineering. Four years shipping AI agents and production web systems from Pakistan, with teams in Europe.",
+};
+
+export const viewport: Viewport = {
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#E6DFCC" },
+    { media: "(prefers-color-scheme: dark)", color: "#1C2A3A" },
+  ],
 };
 
 export default function RootLayout({
@@ -39,11 +49,9 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${orbitron.variable} ${spaceMono.variable} ${inter.variable}`}
+      className={`bg-background ${archivo.variable} ${newsreader.variable} ${jetbrainsMono.variable}`}
     >
-      <body className="min-h-full bg-cyber-black text-cyber-text antialiased">
-        {children}
-      </body>
+      <body className="min-h-full antialiased">{children}</body>
     </html>
   );
 }
