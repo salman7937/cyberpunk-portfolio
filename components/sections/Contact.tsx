@@ -71,9 +71,9 @@ export default function Contact() {
 
             <ul className="space-y-4">
               {[
-                { icon: '✉', label: 'salman@example.com',       href: 'mailto:salman@example.com' },
+                { icon: '✉', label: 'salmanahmed7937@gmail.com',       href: 'mailto:salmanahmed7937@gmail.com' },
                 { icon: '🔗', label: 'linkedin.com/in/salman',   href: '#' },
-                { icon: '🐙', label: 'github.com/salman',        href: '#' },
+                { icon: '🐙', label: 'https://github.com/salman7937',        href: '#' },
                 { icon: '📍', label: 'Pakistan',                 href: '#' },
               ].map(item => (
                 <li key={item.label}>

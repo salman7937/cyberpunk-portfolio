@@ -69,9 +69,9 @@ export default function ProjectCard({ project, featured }: ProjectCardProps) {
 
         {/* Buttons */}
         <div className="flex gap-3 mt-2">
-          {project.caseStudyUrl && (
-            <CyberButton href={project.caseStudyUrl} variant="outline" className="text-[10px]">
-              CASE STUDY →
+          {project.githubUrl && (
+            <CyberButton href={project.githubUrl} variant="outline" className="text-[10px]">
+              GITHUB →
             </CyberButton>
           )}
           {project.liveUrl && (

@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
+import Image from 'next/image'
 import SectionHeading from '@/components/ui/SectionHeading'
 import RevealOnScroll from '@/components/animations/RevealOnScroll'
 import { fadeInLeft, fadeInRight, staggerContainer, fadeInUp } from '@/components/animations/variants'
@@ -16,7 +17,7 @@ const TERMINAL_LINES = [
   { type: 'response', text: '✓ Available for freelance & full-time' },
 ]
 
-const SKILLS = ['React', 'Next.js', 'TypeScript', 'Node.js', 'Figma', 'PostgreSQL', 'Docker', 'AWS']
+const SKILLS = ['React', 'Next.js', 'TypeScript', 'Node.js', 'Figma', 'PostgreSQL', 'Docker', 'Nestjs', 'expressjs']
 const SKILL_LEVELS: Record<string, string> = {
   React: '████████░░',
   'Next.js': '█████████░',
@@ -25,7 +26,8 @@ const SKILL_LEVELS: Record<string, string> = {
   Figma: '███████░░░',
   PostgreSQL: '██████░░░░',
   Docker: '█████░░░░░',
-  AWS: '█████░░░░░',
+  Nestjs: '█████░░░░░',
+  expressjs: '█████░░░░░',
 }
 
 function TerminalBlock() {
@@ -121,15 +123,48 @@ export default function About() {
                 />
               </svg>
 
-              {/* Photo placeholder */}
-              <div className="aspect-[4/5] bg-cyber-card border border-[rgba(0,245,255,0.1)] overflow-hidden transition-all duration-500">
-                <div className="w-full h-full flex items-center justify-center">
-                  <div className="text-center">
-                    <div className="font-display text-6xl text-[rgba(0,245,255,0.1)] mb-4">S</div>
-                    <div className="font-mono text-xs text-cyber-dim uppercase tracking-widest">SALMAN</div>
-                  </div>
-                </div>
-              </div>
+              {/* Glitch scan line overlay */}
+              <motion.div
+                className="absolute inset-0 z-20 pointer-events-none overflow-hidden"
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
+              >
+                <motion.div
+                  className="absolute left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-cyber-accent to-transparent opacity-60"
+                  animate={{ top: ['0%', '100%'] }}
+                  transition={{ duration: 3, repeat: Infinity, ease: 'linear', repeatDelay: 1 }}
+                />
+              </motion.div>
+
+              {/* Neon glow border animation */}
+              <motion.div
+                className="absolute inset-0 z-10 pointer-events-none border border-cyber-accent"
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
+                animate={{ boxShadow: ['0 0 10px rgba(0,245,255,0.2)', '0 0 30px rgba(0,245,255,0.5)', '0 0 10px rgba(0,245,255,0.2)'] }}
+                transition={{ duration: 2.5, repeat: Infinity, ease: 'easeInOut' }}
+              />
+
+              {/* Photo */}
+              <motion.div
+                className="aspect-[4/5] bg-cyber-card overflow-hidden relative"
+                initial={{ scale: 1.1, opacity: 0, filter: 'brightness(0) saturate(0)' }}
+                whileInView={{ scale: 1, opacity: 1, filter: 'brightness(1) saturate(1)' }}
+                viewport={{ once: true }}
+                transition={{ duration: 1, ease: 'easeOut' }}
+              >
+                <Image
+                  src="/images/salman.png"
+                  alt="Salman"
+                  fill
+                  className="object-cover object-top"
+                  priority
+                />
+                {/* Cyberpunk color tint overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-[rgba(0,245,255,0.08)] via-transparent to-[rgba(124,58,237,0.06)] pointer-events-none" />
+              </motion.div>
             </div>
           </motion.div>
 
@@ -190,9 +225,9 @@ export default function About() {
               className="grid grid-cols-3 gap-4 border-t border-[rgba(0,245,255,0.08)] pt-8"
             >
               {[
-                { number: '3+',  label: 'YEARS' },
-                { number: '20+', label: 'PROJECTS' },
-                { number: '100%', label: 'REMOTE' },
+                { number: '1',  label: 'YEAR' },
+                { number: '8+', label: 'PROJECTS' },
+                { number: '100%', label: 'REMOTE AND ON-SITE' },
               ].map(stat => (
                 <motion.div key={stat.label} variants={fadeInUp} className="text-center">
                   <div className="font-display font-bold text-3xl md:text-4xl text-cyber-accent mb-1">

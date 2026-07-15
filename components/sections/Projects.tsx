@@ -97,9 +97,9 @@ export default function Projects() {
                       {featured.description}
                     </p>
                     <div className="flex gap-3">
-                      {featured.caseStudyUrl && (
-                        <a href={featured.caseStudyUrl} className="font-mono text-xs text-cyber-accent border border-[rgba(0,245,255,0.3)] px-4 py-2 hover:bg-[rgba(0,245,255,0.08)] transition-colors uppercase tracking-widest">
-                          CASE STUDY →
+                      {featured.githubUrl && (
+                        <a href={featured.githubUrl} className="font-mono text-xs text-cyber-accent border border-[rgba(0,245,255,0.3)] px-4 py-2 hover:bg-[rgba(0,245,255,0.08)] transition-colors uppercase tracking-widest">
+                          GITHUB →
                         </a>
                       )}
                       {featured.liveUrl && (
