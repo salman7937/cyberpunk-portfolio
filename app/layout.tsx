@@ -1,44 +1,34 @@
-import type { Metadata, Viewport } from "next";
-import { Archivo, Newsreader, JetBrains_Mono } from "next/font/google";
+import type { Metadata } from "next";
+import { Orbitron, Space_Mono, Inter } from "next/font/google";
 import "./globals.css";
 
-const archivo = Archivo({
-  variable: "--font-archivo",
+const orbitron = Orbitron({
+  variable: "--font-orbitron",
   subsets: ["latin"],
-  weight: "variable",
-  axes: ["wdth"],
+  weight: ["400", "600", "700", "900"],
   display: "swap",
   preload: true,
 });
 
-const newsreader = Newsreader({
-  variable: "--font-newsreader",
+const spaceMono = Space_Mono({
+  variable: "--font-space-mono",
   subsets: ["latin"],
-  weight: ["400", "500"],
-  style: ["normal", "italic"],
+  weight: ["400", "700"],
   display: "swap",
   preload: false,
 });
 
-const jetbrainsMono = JetBrains_Mono({
-  variable: "--font-jetbrains",
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
-  weight: ["400", "500"],
   display: "swap",
   preload: false,
 });
 
 export const metadata: Metadata = {
-  title: "Salman — I build systems that make decisions",
-  description:
-    "Salman — full-stack and agent engineering. Four years shipping AI agents and production web systems from Pakistan, with teams in Europe.",
-};
-
-export const viewport: Viewport = {
-  themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#E6DFCC" },
-    { media: "(prefers-color-scheme: dark)", color: "#1C2A3A" },
-  ],
+  title: "Salman | Full-Stack Developer",
+  description: "Portfolio of Salman — Full-Stack Developer & Designer building digital experiences at the intersection of code and design.",
+  keywords: ["developer", "portfolio", "full-stack", "Next.js", "React"],
 };
 
 export default function RootLayout({
@@ -49,9 +39,11 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`bg-background ${archivo.variable} ${newsreader.variable} ${jetbrainsMono.variable}`}
+      className={`${orbitron.variable} ${spaceMono.variable} ${inter.variable}`}
     >
-      <body className="min-h-full antialiased">{children}</body>
+      <body className="min-h-full bg-cyber-black text-cyber-text antialiased">
+        {children}
+      </body>
     </html>
   );
 }

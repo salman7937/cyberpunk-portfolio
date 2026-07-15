@@ -9,7 +9,6 @@
     "lint": "eslint"
   },
   "dependencies": {
-    "ai": "^7.0.17",
     "clsx": "^2.1.1",
     "framer-motion": "^12.40.0",
     "next": "16.2.6",
