@@ -29,7 +29,7 @@ export const projects: Project[] = [
     tags: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Prisma'],
     category: 'web-app',
     image: '/images/projects/project-1.jpg',
-    githubUrl: 'https://github.com/salman7937',
+    githubUrl: 'https://github.com/salman7937/e-commerce',
     liveUrl: '#',
     featured: true,
   },
@@ -50,7 +50,7 @@ export const projects: Project[] = [
     tags: ['Next.js', 'TypeScript', 'PostgreSQL', 'Stripe'],
     category: 'web-app',
     image: '/images/projects/project-3.jpg',
-    githubUrl: 'https://github.com/salman7937',
+    githubUrl: 'https://github.com/salman7937/reserve-seats',
     liveUrl: '#',
   },
   {
@@ -60,7 +60,7 @@ export const projects: Project[] = [
     tags: ['React', 'Node.js', 'MongoDB', 'Socket.io'],
     category: 'web-app',
     image: '/images/projects/project-4.jpg',
-    githubUrl: 'https://github.com/salman7937',
+    githubUrl: 'https://github.com/salman7937/snapcart',
     liveUrl: '#',
   },
   {
@@ -70,7 +70,7 @@ export const projects: Project[] = [
     tags: ['React', 'Node.js', 'MQTT', 'Chart.js'],
     category: 'backend',
     image: '/images/projects/project-5.jpg',
-    githubUrl: 'https://github.com/salman7937',
+    githubUrl: 'https://github.com/salman7937/plant-care',
   },
   {
     id: 6,
@@ -79,7 +79,7 @@ export const projects: Project[] = [
     tags: ['React Native', 'Maps API', 'TypeScript'],
     category: 'mobile',
     image: '/images/projects/project-6.jpg',
-    githubUrl: 'https://github.com/salman7937',
+    githubUrl: 'https://github.com/salman7937/university-map',
   },
   {
     id: 7,
@@ -88,7 +88,7 @@ export const projects: Project[] = [
     tags: ['React', 'Node.js', 'Socket.io', 'TypeScript'],
     category: 'web-app',
     image: '/images/projects/project-7.jpg',
-    githubUrl: 'https://github.com/salman7937',
+    githubUrl: 'https://github.com/salman7937/silenttalkk',
     liveUrl: '#',
   },
   {
@@ -98,7 +98,7 @@ export const projects: Project[] = [
     tags: ['Next.js', 'TypeScript', 'Framer Motion', 'Tailwind CSS'],
     category: 'ui-ux',
     image: '/images/projects/project-8.jpg',
-    githubUrl: 'https://github.com/salman7937',
+    githubUrl: 'https://github.com/salman7937/cyberpunk-portfolio',
     liveUrl: '#',
   },
 ]
