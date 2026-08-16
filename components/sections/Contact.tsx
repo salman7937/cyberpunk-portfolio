@@ -73,12 +73,14 @@ export default function Contact() {
               {[
                 { icon: '✉', label: 'salmanahmed7937@gmail.com',       href: 'mailto:salmanahmed7937@gmail.com' },
                 { icon: '🔗', label: 'linkedin.com/in/salman',   href: '#' },
-                { icon: '🐙', label: 'https://github.com/salman7937',        href: '#' },
+                { icon: '🐙', label: 'https://github.com/salman7937',        href: 'https://github.com/salman7937' },
                 { icon: '📍', label: 'Pakistan',                 href: '#' },
               ].map(item => (
                 <li key={item.label}>
                   <a
                     href={item.href}
+                    target={item.href.startsWith('http') ? '_blank' : undefined}
+                    rel={item.href.startsWith('http') ? 'noopener noreferrer' : undefined}
                     data-cursor="hover"
                     className="flex items-center gap-3 font-body text-sm text-cyber-muted hover:text-cyber-accent transition-colors duration-200 group"
                   >

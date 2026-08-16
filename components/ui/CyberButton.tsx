@@ -10,6 +10,8 @@ interface CyberButtonProps {
   onClick?: () => void
   className?: string
   type?: 'button' | 'submit'
+  target?: string
+  download?: boolean | string
 }
 
 export default function CyberButton({
@@ -19,6 +21,8 @@ export default function CyberButton({
   onClick,
   className,
   type = 'button',
+  target,
+  download,
 }: CyberButtonProps) {
   const ref = useRef<HTMLButtonElement & HTMLAnchorElement>(null)
 
@@ -67,7 +71,13 @@ export default function CyberButton({
 
   if (href) {
     return (
-      <a href={href} {...(props as React.AnchorHTMLAttributes<HTMLAnchorElement>)}>
+      <a
+        href={href}
+        target={target}
+        rel={target === '_blank' ? 'noopener noreferrer' : undefined}
+        download={download}
+        {...(props as React.AnchorHTMLAttributes<HTMLAnchorElement>)}
+      >
         {children}
       </a>
     )

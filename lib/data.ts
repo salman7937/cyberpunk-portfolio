@@ -29,7 +29,7 @@ export const projects: Project[] = [
     tags: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Prisma'],
     category: 'web-app',
     image: '/images/projects/project-1.jpg',
-    githubUrl: '#',
+    githubUrl: 'https://github.com/salman7937',
     liveUrl: '#',
     featured: true,
   },
@@ -40,7 +40,7 @@ export const projects: Project[] = [
     tags: ['Next.js', 'TypeScript', 'Tailwind CSS', 'REST API'],
     category: 'web-app',
     image: '/images/projects/project-2.jpg',
-    githubUrl: '#',
+    githubUrl: 'https://github.com/salman7937',
     liveUrl: '#',
   },
   {
@@ -50,7 +50,7 @@ export const projects: Project[] = [
     tags: ['Next.js', 'TypeScript', 'PostgreSQL', 'Stripe'],
     category: 'web-app',
     image: '/images/projects/project-3.jpg',
-    githubUrl: '#',
+    githubUrl: 'https://github.com/salman7937',
     liveUrl: '#',
   },
   {
@@ -60,7 +60,7 @@ export const projects: Project[] = [
     tags: ['React', 'Node.js', 'MongoDB', 'Socket.io'],
     category: 'web-app',
     image: '/images/projects/project-4.jpg',
-    githubUrl: '#',
+    githubUrl: 'https://github.com/salman7937',
     liveUrl: '#',
   },
   {
@@ -70,7 +70,7 @@ export const projects: Project[] = [
     tags: ['React', 'Node.js', 'MQTT', 'Chart.js'],
     category: 'backend',
     image: '/images/projects/project-5.jpg',
-    githubUrl: '#',
+    githubUrl: 'https://github.com/salman7937',
   },
   {
     id: 6,
@@ -79,7 +79,7 @@ export const projects: Project[] = [
     tags: ['React Native', 'Maps API', 'TypeScript'],
     category: 'mobile',
     image: '/images/projects/project-6.jpg',
-    githubUrl: '#',
+    githubUrl: 'https://github.com/salman7937',
   },
   {
     id: 7,
@@ -88,7 +88,7 @@ export const projects: Project[] = [
     tags: ['React', 'Node.js', 'Socket.io', 'TypeScript'],
     category: 'web-app',
     image: '/images/projects/project-7.jpg',
-    githubUrl: '#',
+    githubUrl: 'https://github.com/salman7937',
     liveUrl: '#',
   },
   {
@@ -98,7 +98,7 @@ export const projects: Project[] = [
     tags: ['Next.js', 'TypeScript', 'Framer Motion', 'Tailwind CSS'],
     category: 'ui-ux',
     image: '/images/projects/project-8.jpg',
-    githubUrl: '#',
+    githubUrl: 'https://github.com/salman7937',
     liveUrl: '#',
   },
 ]

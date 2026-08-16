@@ -70,15 +70,17 @@ export default function ProjectCard({ project, featured }: ProjectCardProps) {
         {/* Buttons */}
         <div className="flex gap-3 mt-2">
           {project.githubUrl && (
-            <CyberButton href={project.githubUrl} variant="outline" className="text-[10px]">
+            <CyberButton href={project.githubUrl} target="_blank" variant="outline" className="text-[10px]">
               GITHUB →
             </CyberButton>
           )}
+          {/* Live demo temporarily disabled
           {project.liveUrl && (
-            <CyberButton href={project.liveUrl} variant="outline" className="text-[10px]">
+            <CyberButton href={project.liveUrl} target="_blank" variant="outline" className="text-[10px]">
               ↗ LIVE
             </CyberButton>
           )}
+          */}
         </div>
       </div>
     </motion.div>
