@@ -113,8 +113,8 @@ export const projects: Project[] = [
   {
     id: 10,
     title: 'FitCheck',
-    description: 'A modern web application for putting together, sharing, and rating outfits. Users can build looks from their wardrobe, get feedback from the community, and browse a feed of style inspiration. Features a clean, responsive interface with smooth interactions, image uploads, and a rating system that surfaces the best fits. Built with a focus on fast load times and a mobile-friendly experience.',
-    tags: ['Next.js', 'TypeScript', 'Tailwind CSS'],
+    description: 'FitCheck helps job seekers see exactly which parts of their CV are costing them interviews. Users upload their CV, paste a job description, and get a fit score broken down into clear components: keyword match, experience match, and an ATS safety check for layout and typography. From there, they can rewrite their CV in one click and export a clean, single-column PDF built for machine parsing. The core design principle is zero hallucination: resumes are parsed into a strict Zod-typed schema first, and a dedicated no-fabrication layer ensures AI rewrites never invent companies, dates, or skills, with post-generation checks that automatically flag any unverified claims. Keyword extraction is deterministic, so results are consistent and explainable rather than a black-box score. Firebase anonymous-first auth lets users try it instantly without signing up, with saved runs available in their history.',
+    tags: ['Next.js', 'TypeScript', 'Zod', 'Firebase'],
     category: 'web-app',
     image: '/images/projects/project-10.jpg',
     githubUrl: 'https://github.com/salman7937/fitcheck',
