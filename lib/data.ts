@@ -40,7 +40,7 @@ export const projects: Project[] = [
     tags: ['Next.js', 'TypeScript', 'Tailwind CSS', 'REST API'],
     category: 'web-app',
     image: '/images/projects/project-2.jpg',
-    githubUrl: 'https://github.com/salman7937',
+    githubUrl: 'https://github.com/salman7937/banking',
     liveUrl: '#',
   },
   {
