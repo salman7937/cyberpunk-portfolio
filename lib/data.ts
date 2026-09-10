@@ -30,7 +30,6 @@ export const projects: Project[] = [
     category: 'web-app',
     image: '/images/projects/project-1.jpg',
     githubUrl: 'https://github.com/salman7937/e-commerce',
-    liveUrl: '#',
     featured: true,
   },
   {
@@ -99,7 +98,7 @@ export const projects: Project[] = [
     category: 'ui-ux',
     image: '/images/projects/project-8.jpg',
     githubUrl: 'https://github.com/salman7937/cyberpunk-portfolio',
-    liveUrl: '#',
+    liveUrl: 'https://cyberpunk-portfolio-lemon.vercel.app/',
   },
   {
     id: 9,
