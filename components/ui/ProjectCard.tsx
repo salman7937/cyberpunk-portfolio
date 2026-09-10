@@ -74,13 +74,11 @@ export default function ProjectCard({ project, featured }: ProjectCardProps) {
               GITHUB →
             </CyberButton>
           )}
-          {/* Live demo temporarily disabled
-          {project.liveUrl && (
+          {project.liveUrl && project.liveUrl !== '#' && (
             <CyberButton href={project.liveUrl} target="_blank" variant="outline" className="text-[10px]">
               ↗ LIVE
             </CyberButton>
           )}
-          */}
         </div>
       </div>
     </motion.div>
