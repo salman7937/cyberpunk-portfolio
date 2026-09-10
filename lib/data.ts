@@ -101,6 +101,26 @@ export const projects: Project[] = [
     githubUrl: 'https://github.com/salman7937/cyberpunk-portfolio',
     liveUrl: '#',
   },
+  {
+    id: 9,
+    title: 'Hotel Management System',
+    description: 'A full-featured hotel management platform designed to streamline reservations, room inventory, and guest services. Includes room booking with availability calendar, guest check-in/check-out workflows, billing and invoicing, and an admin dashboard for managing rooms, staff, and bookings in real time. Built for scalability and ease of use, with a clean interface that simplifies day-to-day hotel operations.',
+    tags: ['Next.js', 'TypeScript', 'Tailwind CSS'],
+    category: 'web-app',
+    image: '/images/projects/project-9.jpg',
+    githubUrl: 'https://github.com/salman7937/hotel-management',
+    liveUrl: 'https://hotel-management-8lu1-theta.vercel.app/',
+  },
+  {
+    id: 10,
+    title: 'FitCheck',
+    description: 'A modern web application for putting together, sharing, and rating outfits. Users can build looks from their wardrobe, get feedback from the community, and browse a feed of style inspiration. Features a clean, responsive interface with smooth interactions, image uploads, and a rating system that surfaces the best fits. Built with a focus on fast load times and a mobile-friendly experience.',
+    tags: ['Next.js', 'TypeScript', 'Tailwind CSS'],
+    category: 'web-app',
+    image: '/images/projects/project-10.jpg',
+    githubUrl: 'https://github.com/salman7937/fitcheck',
+    liveUrl: 'https://fitcheck-orcin-ten.vercel.app/',
+  },
 ]
 
 export const testimonials: Testimonial[] = [
