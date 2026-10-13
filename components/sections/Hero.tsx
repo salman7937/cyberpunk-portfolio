@@ -74,7 +74,7 @@ export default function Hero() {
           <CyberButton href="#projects" variant="primary">
             VIEW WORK →
           </CyberButton>
-          <CyberButton href="/Salman_Ahmad_MERN_Developer_CV.pdf" variant="outline" download="Salman-CV.pdf">
+          <CyberButton href="/Salman_Ahmad_Full_Stack_Developer_CV.pdf" variant="outline" download="Salman_Ahmad_CV.pdf">
             DOWNLOAD CV
           </CyberButton>
         </motion.div>

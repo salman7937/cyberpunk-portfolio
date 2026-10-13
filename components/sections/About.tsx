@@ -10,11 +10,11 @@ import { fadeInLeft, fadeInRight, staggerContainer, fadeInUp } from '@/component
 
 const TERMINAL_LINES = [
   { type: 'prompt', text: '> whoami' },
-  { type: 'response', text: 'Salman — Full-Stack Developer & Designer' },
+  { type: 'response', text: 'Salman Ahmad — Junior Full-Stack Developer' },
   { type: 'prompt', text: '> location' },
-  { type: 'response', text: 'Pakistan 🌐' },
+  { type: 'response', text: 'Faisalabad, Pakistan 🌐' },
   { type: 'prompt', text: '> status' },
-  { type: 'response', text: '✓ Available for freelance & full-time' },
+  { type: 'response', text: '✓ Open to remote & onsite roles' },
 ]
 
 const SKILLS = ['React', 'Next.js', 'TypeScript', 'Node.js', 'Figma', 'PostgreSQL', 'Docker', 'Nestjs', 'expressjs']
@@ -185,12 +185,11 @@ export default function About() {
 
             <RevealOnScroll delay={0.1}>
               <p className="font-body text-base text-cyber-muted leading-relaxed mb-4">
-                I&apos;m a full-stack developer passionate about building fast, beautiful, and functional digital products.
-                With expertise spanning frontend interfaces to backend systems, I bridge the gap between great design and solid engineering.
+                I&apos;m a full-stack developer and fresh BS IT graduate with hands-on experience from a remote internship and a portfolio of shipped web and mobile apps built with React, Next.js, React Native, Node.js, NestJS and TypeScript.
+                I own features end to end — database schema, REST APIs, real-time events, authentication and access control, Docker setup and deployment.
               </p>
               <p className="font-body text-base text-cyber-muted leading-relaxed mb-8">
-                Currently focused on Next.js applications, API design, and crafting pixel-perfect UIs
-                that perform at scale.
+                I&apos;m used to working in a team through task planning and code reviews.
               </p>
             </RevealOnScroll>
 
@@ -226,7 +225,7 @@ export default function About() {
             >
               {[
                 { number: '1',  label: 'YEAR' },
-                { number: '8+', label: 'PROJECTS' },
+                { number: '11', label: 'PROJECTS' },
                 { number: '100%', label: 'REMOTE AND ON-SITE' },
               ].map(stat => (
                 <motion.div key={stat.label} variants={fadeInUp} className="text-center">

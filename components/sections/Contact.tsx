@@ -72,9 +72,9 @@ export default function Contact() {
             <ul className="space-y-4">
               {[
                 { icon: '✉', label: 'salmanahmed7937@gmail.com',       href: 'mailto:salmanahmed7937@gmail.com' },
-                { icon: '🔗', label: 'linkedin.com/in/salman',   href: '#' },
+                { icon: '🔗', label: 'linkedin.com/in/salman-ahmad-765913251', href: 'https://linkedin.com/in/salman-ahmad-765913251' },
                 { icon: '🐙', label: 'https://github.com/salman7937',        href: 'https://github.com/salman7937' },
-                { icon: '📍', label: 'Pakistan',                 href: '#' },
+                { icon: '📍', label: 'Faisalabad, Pakistan',                 href: '#' },
               ].map(item => (
                 <li key={item.label}>
                   <a
